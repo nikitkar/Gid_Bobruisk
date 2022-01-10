@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Бобруйский Гид</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/burger.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/preloader.css">
+    </head>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+    </script>
+    <body>
+        <div class="preloader">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+        </div>
+        <div class="page" id="page">
+            <button class="btn btnScroll" onclick="scrollTopBtn()" id="goTop">
+                <div class="imgArrowTop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                        <path d="M12 18V6M12 6L18 12M12 6L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </div>
+                Наверх
+            </button>
+            <header class="header">
+                <div class="conteiner">
+                    <nav class="modileMenu">
+                        <ul class="modileMenu--list">
+                            <li class="menuItems  modileMenu--items">
+                                <a class="menuItem  modileMenu--item" href="#advantage">Преимущества</a>
+                            </li>
+                            <li class="menuItems  modileMenu--items">
+                                <a class="menuItem  modileMenu--item" href="#excursion">Программа</a>
+                            </li>
+                            <li class="menuItems  modileMenu--items">
+                                <a class="menuItem  modileMenu--item" href="#comment">Отзывы</a>
+                            </li>
+                            <li class="menuItems  modileMenu--items">
+                                <a class="menuItem  modileMenu--item" href="#footerContact">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="headerWrapper">
+                        <div class="headerMenu">
+                            <button class="burger" type="button" id="burger">
+                                <span>Открыть навигацию</span>
+                            </button>
+                            <a class="logo" href="index.html" >
+                                <img src="image/logo.png" alt="Логотип/Домой">
+                            </a>
+                            <ul class="menu">
+                                <li class="menuItems">
+                                    <a class="menuItem" href="#advantage">Преимущества</a>
+                                </li>
+                                <li class="menuItems">
+                                    <a class="menuItem" href="#excursion">Программа</a>
+                                </li>
+                                <li class="menuItems">
+                                    <a class="menuItem" href="#comment">Отзывы</a>
+                                </li>
+                                <li class="menuItems">
+                                    <a class="menuItem" href="#footerContact">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="calback">
+                                <div class="calbackWrapper">
+                                    <img src="image/telephone.png" alt="Телефон">
+                                    <a href="tel:+375 44 12 34 567">375 44 12 34 567</a>
+                                </div>
+                                <p>Прием звонков с 09.00 до 20.00 часов</p>
+                            </div>
+                        </div>
+                        <div class="headerContent">
+                            <h1>Проведи <span>незабываемую экскурсию</span> по Бобруйску с лучшими гидами</h1>
+                            <p>С нами вы окунетесь в свет мастерства, живописи и уникальной архитектуры Бобруйска</p>
+                            <a class="btn" href="#feedback">Интересно? Жми на кнопку</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+
+                <section class="advantage" id="advantage">
+                    <div class="conteiner">
+                        <ul class="advantageList">
+                            <li class="advantageCard">
+                                <div class="cardImg">
+                                    <img src="image/camera.png" alt="Фотоаппарат">
+                                </div>
+                                <div class="cardTitle">
+                                    <p>Профессиональный фотограф</p>
+                                </div>
+                                <div class="cardText">
+                                    <p>Сделаем фото Ваших эмоций во время экскурсий со всех ракурсов и передадим Вам красивые фотографии</p>
+                                </div>
+                            </li>
+                            <li class="advantageCard">
+                                <div class="cardImg">
+                                    <img src="image/car.png" alt="Машина">
+                                </div>
+                                <div class="cardTitle">
+                                    <p>Доставим с комфортом</p>
+                                </div>
+                                <div class="cardText">
+                                    <p>С лучшим транспортом, встретим Вас в аэропорту, или ЖД вокзал</p>
+                                </div>
+                            </li>
+                            <li class="advantageCard">
+                                <div class="cardImg">
+                                    <img src="image/Coat.png" alt="Герб">
+                                </div>
+                                <div class="cardTitle">
+                                    <p>Большая база профессиональных гидов</p>
+                                </div>
+                                <div class="cardText">
+                                    <p>Вам проведут экскурсию один из лучших гидов Бобруйска</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="excursion" id="excursion">
+                    <div class="conteiner">
+                        <div class="excursionWrapper">
+                            <div class="excursionTitle">
+                                <h2>Мы собрали только <span>лучшие</span> экскурсии по Бобруйску</h2>
+                                <p>которые позволяют Вам узнать город и увидеть все уникальные достопримечательности</p>
+                                <hr>
+                            </div>
+
+                            <ul class="excursionList">
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/theatre.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Театр драмы и комедии</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 1.5 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>Могилёвский областной театр драмы и комедии им. В. Дунина-Марцинкевича</p>
+                                            <p>Бобруйский театр драмы и комедии имени Дунина-Марцинкевича имеет статус Могилёвского областного театра. Основан в 1970 году. Назван в честь Винцента Дунина-Марцинкевича — классика белорусской литературы, основоположника белорусской драматургии.</p>
+                                            <p>В 2008 году отмечалось 200-летие со дня рождения писателя и в честь этого в Бобруйске проходил Международный фестиваль национальной драматургии, в котором принимали участие 12 театров из Белоруссии, России, Украины, Молдавии и Латвии.</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/church.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Церковь Непорочного Зачатия Пресвятой Девы Марии</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 30 минут</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>В 1935 году церковь была закрыта, здание использовалось в хозяйственных целях. В 1958 году фасад храма был частично разрушен, а остальную часть церкви вмуровали в построенное административное здание. В такой архитектурной комбинации храм существует и поныне.</p>
+                                            <p>В 1989 году было принято решение о возвращении храма католическому приходу. Административное здание, которое незаконно было пристроено к храму, было передано в собственность города и сейчас решается вопрос о возможном снесении пристройки и реконструкции фасадной части костёла.</p>
+                                            <p>В 2012 году приход торжественно отмечал столетие освящения храма</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/castle.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Дворец Искусств</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 30 минут</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>В Бобруйске проводится более пятисот культурных мероприятий в год. Из наиболее известных можно отметить фестивали народного искусства «Венок дружбы» (международный) и хореографии «У истоков танца» (региональный), а также международный пленэр по керамике «Art-Жыжаль».</p>
+                                            <p>Кроме того, многие творческие коллективы из Бобруйска принимают участие в различных международных фестивалях, таких как «Мэрцишор», «Каліново літо на Дніпрі», «Спивограй», «Крымская волна», «Словения».</p>
+                                            <p>В 2011 году была учреждена специальная премия городского исполнительного комитета имени писателя Михася Лынькова.</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/fortress.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Бобруйская крепость в XXI веке</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 1 час</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>К созданию крепости в Бобруйске приступили 4 июня 1810 года. Её возводили тысячи солдат и крепостных крестьян Могилёвской, Минской, Черниговской губерний. Материалы доставлялись с Украины, Карелии, Кавказа, Урала</p>
+                                            <p>К началу войны на вооружение крепости было поставлено 344 орудия, гарнизон её насчитывал около 4 тысяч человек. Она считалась важным опорным пунктом русской армии на пути южного стратегического фланга наполеоновских войск.</p>
+                                            <p>Второй этап строительства пришелся на 1812 -1836 года. За это время территория крепости увеличилась, были возведены дополнительные бастионы и башни, в том числе в 1822 году — форт «Фридрих Вильгельм», который строился лучшими немецкими инженерами по образцу средневековых темниц.</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/tower.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Водонапорная башня</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 1.5 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>Водонапорная башня и смотровая площадка в Бобруйске – памятник промышленной архитектуры конца 20-х гг. ХХ века. Сейчас объект числится за «Водоканалом» Бобруйска. Организация провела в нем реставрацию и превратила в шикарный ресторан под названием «Чырвоная вежа» (работает с 2003 года).</p>
+                                            <p>На вершине бобруйской башни висят большие часы. Они отбивают время каждый час и в 19.40 играют мелодию «Семь сорок». Наверху установлен и флюгер с изображением веселого бобра, держащего герб города. Также внутри вежи сохранили старый водонапорный механизм – стальной бак, который отлично вписался в интерьер.</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                                <li class="excursionCard"  data-display>
+                                    <div class="excursionLeft">
+                                        <img src="image/excursion-card/arena.jpg" alt="Достопримечательность">
+                                    </div>
+                                    <div class="excursionRight">
+                                        <div class="excursionTitle-card">
+                                            <p>Бобруйск-Арена</p>
+                                        </div>
+                                        <div class="excursionAddition">
+                                            <div class="guide">
+                                                <img src="image/profile.svg" alt="Человек">
+                                                <p>Особенный гид</p>
+                                            </div>
+                                            <div class="time">
+                                                <img src="image/timer.svg" alt="Таймер">
+                                                <p>Длительность 2 часа</p>
+                                            </div>
+                                        </div>
+                                        <div class="excursionInfo">
+                                            <p>В 2008 году, в связи с открытием «Бобруйск-Арены» основан хоккейный клуб «Динамо-Шинник». Начиная с сезона 2008—2009 годов выступал в Экстралиге Белоруссии, по результатам регулярного чемпионата занял 10-е место (не заслужив таким образом права играть в плей-офф чемпионата). Позже клуб вошёл в структуру ХК «Динамо-Минск», став его фарм-клубом и представителем в МХЛ. Весной 2016 года по причине финансовой оптимизации ХК «Динамо-Минск» было принято решение об отказе от представителя в МХЛ и ХК «Динамо-Шинник» был расформирован.</p>
+                                            <p>В 2017 году был образован ХК «Бобруйск», который выступает в Высшей лиге Беларуси (второй дивизион после Экстралиги).</p>
+                                        </div>
+                                        <a class="btn  btnExcursion" href="#feedback">Поехали!</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="addExcursion">
+                                <p>Загрузить ещё...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+                <section class="feedback" >
+                    <div class="conteiner">
+                        <div class="feedbackWrapper">
+                            <div class="feedbackWrapper-left">
+                                <h2>Сомневаетесь с выбором программы?</h2>
+                                <hr>
+                                <p>Заполните контактную форму и мы свяжемся с Вами в течении 10 минут, чтобы помочь Вам с выбором программы</p>
+                            </div>
+                            <iframe name="iframe" style="display: none;"></iframe>
+                            <div class="feedbackWrapper-right">
+                                <form class="form" method="post" id="feedback" target="iframe">
+                                    <h2>Заполните форму, и мы с Вами <span>свяжемся</span></h2>
+                                    <input class="inputForm" type="text" placeholder="Ваше имя">
+                                    <input class="inputForm" type="tel" placeholder="Ваш номер телефона">
+                                    <button class="btn btnForm" type="submit">Заказать обратный звонок</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="comment" id="comment">
+                    <div class="conteiner">
+                        <div class="commentWrapper">
+                            <h2>Что говорят клиенты, про наши экскурсии</h2>
+                            <hr>
+                            <div class="commentContent">
+                                <div class="commentContent--inner">
+                                    <div class="boxComment">
+                                        <div class="boxComment--inner">
+                                            <h2><span>Экскурсия</span> “Первая встреча с Бобруйском”</h2>
+                                            <div class="boxComment--text">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="boxComment--Avtor">
+                                                <img src="image/avtor.png" alt="Профиль">
+                                                <p>— <span>Караткевич<br>Никита</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="boxComment">
+                                        <div class="boxComment--inner">
+                                            <h2><span>Экскурсия</span> “Первая встреча с Бобруйской крепостью”</h2>
+                                            <div class="boxComment--text">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="boxComment--Avtor">
+                                                <img src="image/avtor.png" alt="Профиль">
+                                                <p>— <span>Иванов<br>Егор</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent--arrow">
+                                    <button class="btn__prev" id="btn__prev" disabled="" style="opacity: 0.4;">Prev</button>
+                                    <button class="btn__next" id="btn__next" style="opacity: 0.4;">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" id="footerContact">
+                <div class="conteiner">
+                    <div class="footerWrapper">
+                        <h2>Контакты</h2>
+                        <div class="footerContent">
+                            <div class="footerLeft">
+                                <p>Мы всегда рады вас видеть. Давайте вместе окунемся в мир искусства</p>
+                                <ul class="footerList">
+                                    <li class="footerItems">
+                                        <p>г.Бобруйск</p>
+                                    </li>
+                                    <li class="footerItems">
+                                        <p>с 9.00 до 20.00</p>
+                                    </li>
+                                    <li class="footerItems">
+                                        <a href="tel:+375123456789">+375 12 34 56 789</a>
+                                    </li>
+                                    <li class="footerItems">
+                                        <a href="mailto:adresMail@mail.ru">adresMail@mail.ru</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footerRight">
+                                <iframe name="iframeFooter" style="display: none;"></iframe>
+                                <form class="footerForm" method="post" target="iframeFooter">
+                                    <h2>Связаться с нами</h2>
+                                    <input class="footerInput" type="text" placeholder="Ваше имя">
+                                    <input class="footerInput" type="tel" placeholder="Ваш номер телефона">
+                                    <button class="btn btnForm" type="submit">Связаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        
+        <script src="js/main.js"></script>
+        <script src="js/burder.js"></script>
+    </body>
+</html>
