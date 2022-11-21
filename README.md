@@ -1,4 +1,4 @@
-# Gid_Bobruisk
+# Gid Bobruisk
 
 #### В работе было использовано: 
 * FlexBox;
